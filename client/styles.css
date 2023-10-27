@@ -1,0 +1,113 @@
+ body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./assets/earth-1756274.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style the chat container */
+
+.chat-container h2{
+color: rgb(244,171,43);
+margin: auto;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.chat-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #222;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+/* Style the chat log area */
+.chat-log {
+    padding: 15px;
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: #1A1A1A;
+    color: #DDD;
+    font-size: 14px;
+}
+
+/* Style individual chat messages */
+.message {
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 10px 0;
+    max-width: 80%;
+}
+
+/* Style user messages */
+.user {
+    background-color: rgb(214,130,40);;
+    color: #FFF;
+    align-self: flex-start;
+}
+
+/* Style bot messages */
+.bot {
+    background-color: #E2E2E2;
+    color: #333;
+    align-self: flex-end;
+}
+
+/* Style the input box and send button */
+#user-input {
+    padding: 15px;
+    border: none;
+    border-top: 1px solid #444;
+    font-size: 14px;
+    color: #DDD;
+    background-color: #1A1A1A;
+}
+
+#send-btn {
+    padding: 15px;
+    background-color: rgb(244,171,43);
+    color: #FFF;
+    border: none;
+    border-top: 1px solid #444;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#send-btn:hover {
+    background-color: rgb(214,130,40);
+}
+.chat-log::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chat-log::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+}
+
+.chat-log::-webkit-scrollbar-thumb:hover {
+    background-color: #444;
+}
+
+.chat-log::-webkit-scrollbar-track {
+    background-color: #1A1A1A;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
